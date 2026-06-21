@@ -3,22 +3,38 @@
 	<PropertyGroup>
 		<TargetFrameworks>net10.0</TargetFrameworks>
 
+		<!-- پکیج اختصاصی شما -->
 		<PackageId>Soroush.Abasi.DataverseClient</PackageId>
 		<Version>1.0.0</Version>
+
 		<Authors>Soroush Abasi</Authors>
 		<Company>Soroush Abasi</Company>
 
-		<Copyright>Copyright © 2025 Soroush Abasi</Copyright>
-		<RepositoryUrl>https://github.com/soroush-abn/DataverseClient</RepositoryUrl>
-		<PackageProjectUrl>https://github.com/soroush-abn/DataverseClient</PackageProjectUrl>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageTags>Dynamics;CommonDataService;CDS;PowerApps;PowerPlatform;CdsServiceClient;Dataverse;OnPrem;OnPremise;AD;IFD</PackageTags>
-		<PackageIcon>Data8.png</PackageIcon>
-		<Description>Provides a WS-Trust compatible client for connecting to on-premise IFD instances of Dynamics 365 from .NET 10.</Description>
+		<Description>
+			A WS-Trust compatible Dataverse client for connecting to on-premise IFD Dynamics 365 instances using .NET 10.
+
+			This project is a maintained fork of Data8/DataverseClient and provides an alternative IOrganizationService implementation based on WS-Trust.
+		</Description>
+
+		<PackageTags>Dynamics;Dataverse;OnPrem;IFD;WS-Trust;PowerPlatform</PackageTags>
+
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<PackageReleaseNotes>Initial public fork for .NET 10 and on-premise IFD support.</PackageReleaseNotes>
+
+		<PackageProjectUrl>https://github.com/soroush-abn/DataverseClient</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/soroush-abn/DataverseClient</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+		<!-- لوگوی جدید -->
+		<PackageIcon>Soroush.png</PackageIcon>
+
+		<PackageReleaseNotes>
+			Initial release of the fork targeting .NET 10, updated metadata, and maintained under Soroush Abn.
+		</PackageReleaseNotes>
+
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -30,7 +46,7 @@
 
 	<ItemGroup>
 		<None Include="..\README.md" Pack="true" PackagePath="\" />
-		<None Include="..\Data8.png">
+		<None Include="..\Soroush.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
