@@ -64,7 +64,7 @@ Because OnPremiseClient implements the same IOrganizationService interface as th
 ---
 
 ## Sample
-
+```csharp
 using Data8.PowerPlatform.Dataverse.Client;
 using Microsoft.PowerPlatform.Dataverse.Client;
 using Microsoft.Xrm.Sdk;
@@ -98,7 +98,7 @@ void CreateRecord(IOrganizationService svc)
 
     entity.Id = svc.Create(entity);
 }
-
+```
 ---
 
 ## Compatibility
@@ -154,7 +154,7 @@ Early Bound Generator (XrmToolBox)
 https://www.xrmtoolbox.com/plugins/DLaB.Xrm.EarlyBoundGenerator/
 
 Enable proxy types as follows:
-
+```csharp
 var client = new OnPremiseClient(url, username, password);
 client.EnableProxyTypes();
 
@@ -176,7 +176,7 @@ var newContacts = context.ContactSet
     .Where(c => c.CreatedOn > DateTime.Today)
     .Select(c => new { c.FirstName, c.LastName })
     .ToList();
-
+```
 ---
 
 ## Async Support
